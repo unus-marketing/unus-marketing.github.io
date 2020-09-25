@@ -14,16 +14,39 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Caja Mitras</title>
 <style id="applicationStylesheet" type="text/css">
+:root {
+	--web-view-ids: desktop,movil;
+	--web-view-name: desktop;
+	--web-view-id: desktop;
+	--web-scale-to-fit: false;
+	--web-scale-to-fit-type: default;
+	--web-enable-scale-up: false;
+	--web-scale-on-resize: false;
+	--web-show-scale-controls: false;
+	--web-scale-on-double-click: false;
+	--web-center-horizontally: true;
+	--web-center-vertically: false;
+	--web-actual-size-on-double-click: false;
+	--web-navigate-on-keypress: false;
+	--web-refresh-for-changes: false;
+	--web-add-image-compare: false;
+	--web-show-by-media-query: true;
+	--web-application: false;
+	--web-show-navigation-controls: false;
+	--web-enable-deep-linking: true;
+	--web-is-overlay: false;
+}
+#desktop,
+#movil {
+	display: none;
+}
+@media (min-width: 1600px) {
 	.mediaViewInfo {
 		--web-view-name: desktop;
 		--web-view-id: desktop;
-		--web-scale-on-resize: true;
 		--web-center-horizontally: true;
 		--web-show-by-media-query: true;
 		--web-enable-deep-linking: true;
-	}
-	:root {
-		--web-view-ids: desktop;
 	}
 	* {
 		margin: 0;
@@ -35,22 +58,22 @@
 		position: absolute;
 		transform: translateX(-50%);
 		left: 50%;
-		width: 1366px;
+		display: block;
+		width: 1600px;
 		height: 1525px;
 		background-color: rgba(255,255,255,1);
 		overflow: hidden;
 		--web-view-name: desktop;
 		--web-view-id: desktop;
-		--web-scale-on-resize: true;
 		--web-center-horizontally: true;
 		--web-show-by-media-query: true;
 		--web-enable-deep-linking: true;
 	}
 	#Layer_1 {
 		position: absolute;
-		width: 1354px;
+		width: 1600px;
 		height: 2014px;
-		left: 7px;
+		left: 0px;
 		top: -392px;
 		overflow: visible;
 	}
@@ -58,7 +81,7 @@
 		position: absolute;
 		width: 579px;
 		height: 381px;
-		left: 623px;
+		left: 740px;
 		top: 194px;
 		overflow: visible;
 	}
@@ -66,7 +89,7 @@
 		position: absolute;
 		width: 1036px;
 		height: 596px;
-		left: 164px;
+		left: 281px;
 		top: 680px;
 		overflow: visible;
 	}
@@ -74,7 +97,7 @@
 		position: absolute;
 		width: 514px;
 		height: 14px;
-		left: 425px;
+		left: 542px;
 		top: 1264px;
 		overflow: visible;
 	}
@@ -82,7 +105,7 @@
 		position: absolute;
 		width: 1019px;
 		height: 44px;
-		left: 173px;
+		left: 290px;
 		top: 1277px;
 		overflow: visible;
 	}
@@ -90,7 +113,7 @@
 		position: absolute;
 		width: 1010px;
 		height: 53px;
-		left: 178px;
+		left: 295px;
 		top: 631px;
 		overflow: visible;
 	}
@@ -98,7 +121,7 @@
 		position: absolute;
 		width: 513px;
 		height: 155px;
-		left: 180px;
+		left: 297px;
 		top: 116px;
 		overflow: visible;
 	}
@@ -106,7 +129,7 @@
 		position: absolute;
 		width: 424px;
 		height: 144px;
-		left: 168px;
+		left: 285px;
 		top: 476px;
 		overflow: visible;
 	}
@@ -114,7 +137,7 @@
 		position: absolute;
 		width: 251px;
 		height: 95px;
-		left: 254px;
+		left: 371px;
 		top: 492px;
 		overflow: visible;
 	}
@@ -122,7 +145,7 @@
 		position: absolute;
 		width: 214px;
 		height: 167px;
-		left: 180px;
+		left: 297px;
 		top: 1272px;
 		overflow: visible;
 	}
@@ -130,7 +153,7 @@
 		position: absolute;
 		width: 818px;
 		height: 141px;
-		left: 369px;
+		left: 486px;
 		top: 1328px;
 		overflow: visible;
 	}
@@ -138,7 +161,7 @@
 		position: absolute;
 		width: 402px;
 		height: 161px;
-		left: 185px;
+		left: 302px;
 		top: 294px;
 		overflow: visible;
 	}
@@ -146,7 +169,7 @@
 		position: absolute;
 		width: 116px;
 		height: 59px;
-		left: 917px;
+		left: 1034px;
 		top: 50px;
 		overflow: visible;
 	}
@@ -154,7 +177,7 @@
 		position: absolute;
 		width: 70px;
 		height: 79px;
-		left: 808px;
+		left: 925px;
 		top: 40px;
 		overflow: visible;
 	}
@@ -162,10 +185,194 @@
 		position: absolute;
 		width: 112px;
 		height: 48px;
-		left: 1071px;
+		left: 1188px;
 		top: 60px;
 		overflow: visible;
 	}
+}
+@media (min-width: 0px) and (max-width: 1599px) {
+	.mediaViewInfo {
+		--web-view-name: movil;
+		--web-view-id: movil;
+		--web-scale-to-fit: true;
+		--web-scale-to-fit-type: width;
+		--web-enable-scale-up: true;
+		--web-scale-on-resize: true;
+		--web-center-horizontally: true;
+		--web-show-by-media-query: true;
+		--web-enable-deep-linking: true;
+	}
+	* {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+		border: none;
+	}
+	#movil {
+		position: absolute;
+		transform: translateX(-50%);
+		left: 50%;
+		display: block;
+		width: 375px;
+		height: 1709px;
+		background-color: rgba(255,255,255,1);
+		overflow: hidden;
+		--web-view-name: movil;
+		--web-view-id: movil;
+		--web-scale-to-fit: true;
+		--web-scale-to-fit-type: width;
+		--web-enable-scale-up: true;
+		--web-scale-on-resize: true;
+		--web-center-horizontally: true;
+		--web-show-by-media-query: true;
+		--web-enable-deep-linking: true;
+	}
+	#Background {
+		position: absolute;
+		width: 375px;
+		height: 1709px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Logo_Unus {
+		position: absolute;
+		width: 95px;
+		height: 48px;
+		left: 126px;
+		top: 41px;
+		overflow: visible;
+	}
+	#Logo_Caja {
+		position: absolute;
+		width: 58px;
+		height: 65px;
+		left: 36px;
+		top: 33px;
+		overflow: visible;
+	}
+	#Logo_Argos {
+		position: absolute;
+		width: 92px;
+		height: 39px;
+		left: 253px;
+		top: 49px;
+		overflow: visible;
+	}
+	#Layer_23 {
+		position: absolute;
+		width: 340px;
+		height: 57px;
+		left: 21px;
+		top: 1557px;
+		overflow: visible;
+	}
+	#Layer_22 {
+		position: absolute;
+		width: 337px;
+		height: 17px;
+		left: 20px;
+		top: 1620px;
+		overflow: visible;
+	}
+	#Layer_21 {
+		position: absolute;
+		width: 329px;
+		height: 35px;
+		left: 23px;
+		top: 1338px;
+		overflow: visible;
+	}
+	#Layer_8 {
+		position: absolute;
+		width: 37px;
+		height: 36px;
+		left: 291px;
+		top: 1356px;
+		overflow: visible;
+	}
+	#Layer_20 {
+		position: absolute;
+		width: 329px;
+		height: 25px;
+		left: 23px;
+		top: 1298px;
+		overflow: visible;
+	}
+	#Layer_19 {
+		position: absolute;
+		width: 373px;
+		height: 494px;
+		left: 0px;
+		top: 673px;
+		overflow: visible;
+	}
+	#Layer_18 {
+		position: absolute;
+		width: 286px;
+		height: 104px;
+		left: 46px;
+		top: 589px;
+		overflow: visible;
+	}
+	#Layer_17 {
+		position: absolute;
+		width: 165px;
+		height: 66px;
+		left: 106px;
+		top: 600px;
+		overflow: visible;
+	}
+	#Layer_16 {
+		position: absolute;
+		width: 303px;
+		height: 92px;
+		left: 35px;
+		top: 127px;
+		overflow: visible;
+	}
+	#Layer_15 {
+		position: absolute;
+		width: 311px;
+		height: 124px;
+		left: 33px;
+		top: 457px;
+		overflow: visible;
+	}
+	#Vector_Smart_Object_copy {
+		position: absolute;
+		width: 314px;
+		height: 206px;
+		left: 32px;
+		top: 231px;
+		overflow: visible;
+	}
+	#Layer_14 {
+		position: absolute;
+		width: 348px;
+		height: 71px;
+		left: 14px;
+		top: 1212px;
+		overflow: visible;
+	}
+	#Layer_13 {
+		position: absolute;
+		width: 339px;
+		height: 50px;
+		left: 18px;
+		top: 1151px;
+		overflow: visible;
+	}
+	#FAQ_2 {
+		position: absolute;
+		width: 228px;
+		height: 179px;
+		left: 75px;
+		top: 1387px;
+		overflow: visible;
+	}
+}
+
 </style>
 <script id="applicationScript">
 ///////////////////////////////////////
@@ -2594,7 +2801,7 @@ window.application = new Application();
     <!-- Google Tag Manager (noscript) -->
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NCNGTJR"
 		height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-		<!-- End Google Tag Manager (noscript) -->
+	<!-- End Google Tag Manager (noscript) -->
 <div id="desktop">
 	<img id="Layer_1" src="Layer_1.png" srcset="Layer_1.png 1x, Layer_1@2x.png 2x">
 	<img id="ilustracion" src="ilustracion.png" srcset="ilustracion.png 1x, ilustracion@2x.png 2x">
@@ -2605,12 +2812,37 @@ window.application = new Application();
 	<img id="header" src="header.png" srcset="header.png 1x, header@2x.png 2x">
 	<img id="boton_bg" src="boton_bg.png" srcset="boton_bg.png 1x, boton_bg@2x.png 2x">
 	<img id="txt_boton" src="txt_boton.png" srcset="txt_boton.png 1x, txt_boton@2x.png 2x">
+	<a href="https://landings.unus-segurosyfianzas.com/cajamitras/faqs.html">
 	<img id="boton_faq" src="boton_faq.png" srcset="boton_faq.png 1x, boton_faq@2x.png 2x">
+	</a>
 	<img id="txt_footer" src="txt_footer.png" srcset="txt_footer.png 1x, txt_footer@2x.png 2x">
 	<img id="header2" src="header2.png" srcset="header2.png 1x, header2@2x.png 2x">
 	<img id="logo_unus" src="logo_unus.png" srcset="logo_unus.png 1x, logo_unus@2x.png 2x">
 	<img id="logo_caja" src="logo_caja.png" srcset="logo_caja.png 1x, logo_caja@2x.png 2x">
 	<img id="logo_argos" src="logo_argos.png" srcset="logo_argos.png 1x, logo_argos@2x.png 2x">
 </div>
+<div id="movil">
+	<img id="Background" src="Background.png" srcset="Background.png 1x, Background@2x.png 2x">
+	<img id="Logo_Unus" src="logo_unus.png" srcset="logo_unus.png 1x, logo_unus@2x.png 2x">
+	<img id="Logo_Caja" src="logo_caja.png" srcset="logo_caja.png 1x, logo_caja@2x.png 2x">
+	<img id="Logo_Argos" src="logo_argos.png" srcset="logo_argos.png 1x, logo_argos@2x.png 2x">
+	<img id="Layer_23" src="Layer_23.png" srcset="Layer_23.png 1x, Layer_23@2x.png 2x">
+	<img id="Layer_22" src="Layer_22.png" srcset="Layer_22.png 1x, Layer_22@2x.png 2x">
+	<img id="Layer_21" src="Layer_21.png" srcset="Layer_21.png 1x, Layer_21@2x.png 2x">
+	<a href="https://m.me/102220884979895"><img id="Layer_8" src="Layer_8.png" srcset="Layer_8.png 1x, Layer_8@2x.png 2x"></a>
+	<img id="Layer_20" src="Layer_20.png" srcset="Layer_20.png 1x, Layer_20@2x.png 2x">
+	<img id="Layer_19" src="Layer_19.png" srcset="Layer_19.png 1x, Layer_19@2x.png 2x">
+	<img id="Layer_18" src="Layer_18.png" srcset="Layer_18.png 1x, Layer_18@2x.png 2x">
+	<img id="Layer_17" src="Layer_17.png" srcset="Layer_17.png 1x, Layer_17@2x.png 2x">
+	<img id="Layer_16" src="Layer_16.png" srcset="Layer_16.png 1x, Layer_16@2x.png 2x">
+	<img id="Layer_15" src="Layer_15.png" srcset="Layer_15.png 1x, Layer_15@2x.png 2x">
+	<img id="Vector_Smart_Object_copy" src="Vector_Smart_Object_copy.png" srcset="Vector_Smart_Object_copy.png 1x, Vector_Smart_Object_copy@2x.png 2x">
+	<img id="Layer_14" src="Layer_14.png" srcset="Layer_14.png 1x, Layer_14@2x.png 2x">
+	<img id="Layer_13" src="Layer_13.png" srcset="Layer_13.png 1x, Layer_13@2x.png 2x">
+	<a href="https://landings.unus-segurosyfianzas.com/cajamitras/faqs.html">
+	<img id="FAQ_2" src="FAQ_2.png" srcset="FAQ_2.png 1x, FAQ_2@2x.png 2x">
+	</a>
+</div>
+
 </body>
 </html>
