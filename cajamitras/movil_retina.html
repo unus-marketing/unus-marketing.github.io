@@ -4,12 +4,12 @@
 <meta charset="utf-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>movil</title>
+<title>movil_retina</title>
 <style id="applicationStylesheet" type="text/css">
 :root {
-	--web-view-ids: movil,desktop;
-	--web-view-name: movil;
-	--web-view-id: movil;
+	--web-view-ids: desktop,movil_retina;
+	--web-view-name: movil_retina;
+	--web-view-id: movil_retina;
 	--web-scale-to-fit: true;
 	--web-scale-to-fit-type: width;
 	--web-enable-scale-up: true;
@@ -28,197 +28,14 @@
 	--web-enable-deep-linking: true;
 	--web-is-overlay: false;
 }
-#movil,
-#desktop {
+#desktop,
+#movil_retina {
 	display: none;
-}
-@media (min-width: 0px) and (max-width: 1599px) {
-	.mediaViewInfo {
-		--web-view-name: movil;
-		--web-view-id: movil;
-		--web-scale-to-fit: true;
-		--web-scale-to-fit-type: width;
-		--web-enable-scale-up: true;
-		--web-scale-on-resize: true;
-		--web-center-horizontally: true;
-		--web-show-by-media-query: true;
-		--web-enable-deep-linking: true;
-	}
-	* {
-		margin: 0;
-		padding: 0;
-		box-sizing: border-box;
-		border: none;
-	}
-	#movil {
-		position: absolute;
-		transform: translateX(-50%);
-		left: 50%;
-		display: block;
-		width: 375px;
-		height: 1709px;
-		background-color: rgba(255,255,255,1);
-		overflow: hidden;
-		--web-view-name: movil;
-		--web-view-id: movil;
-		--web-scale-to-fit: true;
-		--web-scale-to-fit-type: width;
-		--web-enable-scale-up: true;
-		--web-scale-on-resize: true;
-		--web-center-horizontally: true;
-		--web-show-by-media-query: true;
-		--web-enable-deep-linking: true;
-	}
-	#Background {
-		position: absolute;
-		width: 375px;
-		height: 1709px;
-		left: 0px;
-		top: 0px;
-		overflow: visible;
-	}
-	#Logo_Unus {
-		position: absolute;
-		width: 95px;
-		height: 48px;
-		left: 126px;
-		top: 41px;
-		overflow: visible;
-	}
-	#Logo_Caja {
-		position: absolute;
-		width: 58px;
-		height: 65px;
-		left: 36px;
-		top: 33px;
-		overflow: visible;
-	}
-	#Logo_Argos {
-		position: absolute;
-		width: 92px;
-		height: 39px;
-		left: 253px;
-		top: 49px;
-		overflow: visible;
-	}
-	#Layer_23 {
-		position: absolute;
-		width: 340px;
-		height: 57px;
-		left: 21px;
-		top: 1557px;
-		overflow: visible;
-	}
-	#Layer_22 {
-		position: absolute;
-		width: 337px;
-		height: 17px;
-		left: 20px;
-		top: 1620px;
-		overflow: visible;
-	}
-	#Layer_21 {
-		position: absolute;
-		width: 329px;
-		height: 35px;
-		left: 23px;
-		top: 1338px;
-		overflow: visible;
-	}
-	#Layer_8 {
-		position: absolute;
-		width: 37px;
-		height: 36px;
-		left: 291px;
-		top: 1356px;
-		overflow: visible;
-	}
-	#Layer_20 {
-		position: absolute;
-		width: 329px;
-		height: 25px;
-		left: 23px;
-		top: 1298px;
-		overflow: visible;
-	}
-	#Layer_19 {
-		position: absolute;
-		width: 373px;
-		height: 494px;
-		left: 0px;
-		top: 673px;
-		overflow: visible;
-	}
-	#Layer_18 {
-		position: absolute;
-		width: 286px;
-		height: 104px;
-		left: 46px;
-		top: 589px;
-		overflow: visible;
-	}
-	#Layer_17 {
-		position: absolute;
-		width: 165px;
-		height: 66px;
-		left: 106px;
-		top: 600px;
-		overflow: visible;
-	}
-	#Layer_16 {
-		position: absolute;
-		width: 303px;
-		height: 92px;
-		left: 35px;
-		top: 127px;
-		overflow: visible;
-	}
-	#Layer_15 {
-		position: absolute;
-		width: 311px;
-		height: 124px;
-		left: 33px;
-		top: 457px;
-		overflow: visible;
-	}
-	#Vector_Smart_Object_copy {
-		position: absolute;
-		width: 314px;
-		height: 206px;
-		left: 32px;
-		top: 231px;
-		overflow: visible;
-	}
-	#Layer_14 {
-		position: absolute;
-		width: 348px;
-		height: 71px;
-		left: 14px;
-		top: 1212px;
-		overflow: visible;
-	}
-	#Layer_13 {
-		position: absolute;
-		width: 339px;
-		height: 50px;
-		left: 18px;
-		top: 1151px;
-		overflow: visible;
-	}
-	#FAQ_2 {
-		position: absolute;
-		width: 228px;
-		height: 179px;
-		left: 75px;
-		top: 1387px;
-		overflow: visible;
-	}
 }
 @media (min-width: 1600px) {
 	.mediaViewInfo {
 		--web-view-name: desktop;
 		--web-view-id: desktop;
-		--web-scale-on-resize: true;
 		--web-center-horizontally: true;
 		--web-show-by-media-query: true;
 		--web-enable-deep-linking: true;
@@ -240,7 +57,6 @@
 		overflow: hidden;
 		--web-view-name: desktop;
 		--web-view-id: desktop;
-		--web-scale-on-resize: true;
 		--web-center-horizontally: true;
 		--web-show-by-media-query: true;
 		--web-enable-deep-linking: true;
@@ -363,6 +179,180 @@
 		height: 48px;
 		left: 1188px;
 		top: 60px;
+		overflow: visible;
+	}
+}
+@media (min-width: 0px) and (max-width: 1599px) {
+	.mediaViewInfo {
+		--web-view-name: movil_retina;
+		--web-view-id: movil_retina;
+		--web-scale-to-fit: true;
+		--web-scale-to-fit-type: width;
+		--web-enable-scale-up: true;
+		--web-scale-on-resize: true;
+		--web-center-horizontally: true;
+		--web-show-by-media-query: true;
+		--web-enable-deep-linking: true;
+	}
+	* {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+		border: none;
+	}
+	#movil_retina {
+		position: absolute;
+		transform: translateX(-50%);
+		left: 50%;
+		display: block;
+		width: 781px;
+		height: 3560px;
+		background-color: rgba(255,255,255,1);
+		overflow: hidden;
+		--web-view-name: movil_retina;
+		--web-view-id: movil_retina;
+		--web-scale-to-fit: true;
+		--web-scale-to-fit-type: width;
+		--web-enable-scale-up: true;
+		--web-scale-on-resize: true;
+		--web-center-horizontally: true;
+		--web-show-by-media-query: true;
+		--web-enable-deep-linking: true;
+	}
+	#BG {
+		position: absolute;
+		width: 781px;
+		height: 3560px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#email {
+		position: absolute;
+		width: 701px;
+		height: 35px;
+		left: 43px;
+		top: 3335px;
+		overflow: visible;
+	}
+	#telefonos {
+		position: absolute;
+		width: 709px;
+		height: 119px;
+		left: 43px;
+		top: 3181px;
+		overflow: visible;
+	}
+	#mess_xl {
+		position: absolute;
+		width: 236px;
+		height: 236px;
+		left: 462px;
+		top: 2905px;
+		overflow: visible;
+	}
+	#boton_faq_ {
+		position: absolute;
+		width: 340px;
+		height: 266px;
+		left: 74px;
+		top: 2903px;
+		overflow: visible;
+	}
+	#mess_sm {
+		position: absolute;
+		width: 61px;
+		height: 61px;
+		left: 619px;
+		top: 2823px;
+		overflow: visible;
+	}
+	#Txt_pregunta {
+		position: absolute;
+		width: 686px;
+		height: 155px;
+		left: 47px;
+		top: 2704px;
+		overflow: visible;
+	}
+	#pleca_amarilla {
+		position: absolute;
+		width: 727px;
+		height: 147px;
+		left: 27px;
+		top: 2525px;
+		overflow: visible;
+	}
+	#pleca_verde {
+		position: absolute;
+		width: 704px;
+		height: 104px;
+		left: 39px;
+		top: 2398px;
+		overflow: visible;
+	}
+	#tb2 {
+		position: absolute;
+		width: 731px;
+		height: 986px;
+		left: 19px;
+		top: 1413px;
+		overflow: visible;
+	}
+	#Boton_125 {
+		position: absolute;
+		width: 563px;
+		height: 184px;
+		left: 112px;
+		top: 1232px;
+		overflow: visible;
+	}
+	#Header_2 {
+		position: absolute;
+		width: 646px;
+		height: 260px;
+		left: 70px;
+		top: 952px;
+		overflow: visible;
+	}
+	#ilustracion_principal {
+		position: absolute;
+		width: 661px;
+		height: 435px;
+		left: 61px;
+		top: 479px;
+		overflow: visible;
+	}
+	#Header_1 {
+		position: absolute;
+		width: 632px;
+		height: 192px;
+		left: 72px;
+		top: 265px;
+		overflow: visible;
+	}
+	#logo_unus_bc {
+		position: absolute;
+		width: 198px;
+		height: 100px;
+		left: 262px;
+		top: 85px;
+		overflow: visible;
+	}
+	#logo_caja_bd {
+		position: absolute;
+		width: 133px;
+		height: 150px;
+		left: 67px;
+		top: 55px;
+		overflow: visible;
+	}
+	#logo_argos_be {
+		position: absolute;
+		width: 192px;
+		height: 81px;
+		left: 527px;
+		top: 102px;
 		overflow: visible;
 	}
 }
@@ -2792,26 +2782,6 @@ window.application = new Application();
 </script>
 </head>
 <body>
-<div id="movil">
-	<img id="Background" src="Background.png" srcset="Background.png 1x, Background@2x.png 2x">
-	<img id="Logo_Unus" src="Logo_Unus.png" srcset="Logo_Unus.png 1x, Logo_Unus@2x.png 2x">
-	<img id="Logo_Caja" src="Logo_Caja.png" srcset="Logo_Caja.png 1x, Logo_Caja@2x.png 2x">
-	<img id="Logo_Argos" src="Logo_Argos.png" srcset="Logo_Argos.png 1x, Logo_Argos@2x.png 2x">
-	<img id="Layer_23" src="Layer_23.png" srcset="Layer_23.png 1x, Layer_23@2x.png 2x">
-	<img id="Layer_22" src="Layer_22.png" srcset="Layer_22.png 1x, Layer_22@2x.png 2x">
-	<img id="Layer_21" src="Layer_21.png" srcset="Layer_21.png 1x, Layer_21@2x.png 2x">
-	<img id="Layer_8" src="Layer_8.png" srcset="Layer_8.png 1x, Layer_8@2x.png 2x">
-	<img id="Layer_20" src="Layer_20.png" srcset="Layer_20.png 1x, Layer_20@2x.png 2x">
-	<img id="Layer_19" src="Layer_19.png" srcset="Layer_19.png 1x, Layer_19@2x.png 2x">
-	<img id="Layer_18" src="Layer_18.png" srcset="Layer_18.png 1x, Layer_18@2x.png 2x">
-	<img id="Layer_17" src="Layer_17.png" srcset="Layer_17.png 1x, Layer_17@2x.png 2x">
-	<img id="Layer_16" src="Layer_16.png" srcset="Layer_16.png 1x, Layer_16@2x.png 2x">
-	<img id="Layer_15" src="Layer_15.png" srcset="Layer_15.png 1x, Layer_15@2x.png 2x">
-	<img id="Vector_Smart_Object_copy" src="Vector_Smart_Object_copy.png" srcset="Vector_Smart_Object_copy.png 1x, Vector_Smart_Object_copy@2x.png 2x">
-	<img id="Layer_14" src="Layer_14.png" srcset="Layer_14.png 1x, Layer_14@2x.png 2x">
-	<img id="Layer_13" src="Layer_13.png" srcset="Layer_13.png 1x, Layer_13@2x.png 2x">
-	<img id="FAQ_2" src="FAQ_2.png" srcset="FAQ_2.png 1x, FAQ_2@2x.png 2x">
-</div>
 <div id="desktop">
 	<img id="Layer_1" src="Layer_1.png" srcset="Layer_1.png 1x, Layer_1@2x.png 2x">
 	<img id="ilustracion" src="ilustracion.png" srcset="ilustracion.png 1x, ilustracion@2x.png 2x">
@@ -2822,7 +2792,7 @@ window.application = new Application();
 	<img id="header" src="header.png" srcset="header.png 1x, header@2x.png 2x">
 	<img id="boton_bg" src="boton_bg.png" srcset="boton_bg.png 1x, boton_bg@2x.png 2x">
 	<img id="txt_boton" src="txt_boton.png" srcset="txt_boton.png 1x, txt_boton@2x.png 2x">
-	<a href="https://landings.unus-segurosyfianzas.com/cajamitras/faq.html">
+	<a href="https://landings.unus-segurosyfianzas.com/cajamitras/faqs.html">
 	<img id="boton_faq" src="boton_faq.png" srcset="boton_faq.png 1x, boton_faq@2x.png 2x">
 	</a>
 	<img id="txt_footer" src="txt_footer.png" srcset="txt_footer.png 1x, txt_footer@2x.png 2x">
@@ -2830,6 +2800,25 @@ window.application = new Application();
 	<img id="logo_unus" src="logo_unus.png" srcset="logo_unus.png 1x, logo_unus@2x.png 2x">
 	<img id="logo_caja" src="logo_caja.png" srcset="logo_caja.png 1x, logo_caja@2x.png 2x">
 	<img id="logo_argos" src="logo_argos.png" srcset="logo_argos.png 1x, logo_argos@2x.png 2x">
+</div>
+<div id="movil_retina">
+	<img id="BG" src="BG.png" srcset="BG.png 1x, BG@2x.png 2x">
+	<img id="email" src="email.png" srcset="email.png 1x, email@2x.png 2x">
+	<img id="telefonos" src="telefonos.png" srcset="telefonos.png 1x, telefonos@2x.png 2x">
+	<img id="mess_xl" src="mess_xl.png" srcset="mess_xl.png 1x, mess_xl@2x.png 2x">
+	<img id="boton_faq_" src="boton_faq_.png" srcset="boton_faq_.png 1x, boton_faq_@2x.png 2x">
+	<img id="mess_sm" src="mess_sm.png" srcset="mess_sm.png 1x, mess_sm@2x.png 2x">
+	<img id="Txt_pregunta" src="Txt_pregunta.png" srcset="Txt_pregunta.png 1x, Txt_pregunta@2x.png 2x">
+	<img id="pleca_amarilla" src="pleca_amarilla.png" srcset="pleca_amarilla.png 1x, pleca_amarilla@2x.png 2x">
+	<img id="pleca_verde" src="pleca_verde.png" srcset="pleca_verde.png 1x, pleca_verde@2x.png 2x">
+	<img id="tb2" src="tb2.png" srcset="tb2.png 1x, tb2@2x.png 2x">
+	<img id="Boton_125" src="Boton_125.png" srcset="Boton_125.png 1x, Boton_125@2x.png 2x">
+	<img id="Header_2" src="Header_2.png" srcset="Header_2.png 1x, Header_2@2x.png 2x">
+	<img id="ilustracion_principal" src="ilustracion_principal.png" srcset="ilustracion_principal.png 1x, ilustracion_principal@2x.png 2x">
+	<img id="Header_1" src="Header_1.png" srcset="Header_1.png 1x, Header_1@2x.png 2x">
+	<img id="logo_unus_bc" src="logo_unus_bc.png" srcset="logo_unus_bc.png 1x, logo_unus_bc@2x.png 2x">
+	<img id="logo_caja_bd" src="logo_caja_bd.png" srcset="logo_caja_bd.png 1x, logo_caja_bd@2x.png 2x">
+	<img id="logo_argos_be" src="logo_argos_be.png" srcset="logo_argos_be.png 1x, logo_argos_be@2x.png 2x">
 </div>
 
 </body>
