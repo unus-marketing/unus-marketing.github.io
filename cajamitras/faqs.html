@@ -17,56 +17,173 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
     <title>FAQ</title>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;900&display=swap');
+
+      body {
+        background: #f9fff4 url(BG_q.png) no-repeat center top;
+      }
+
+      #header {
+        display: inherit;
+        padding: 40px 0;
+      }
+
+      h1,
+      button.btn.btn-link,
+      .card-body {
+        font-family: Nunito;
+      }
+
+      h1 {
+        font-style: italic;
+        font-weight: 900;
+        font-size: 40px;
+        color: #006d56;
+      }
+
+      button.btn.btn-link,
+      .card-body {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;     
+      }
+
+      .card {
+        border: 1px solid #c59a41;
+      }
+
+      .card-header {
+        background-color: #f6efe0;
+      }
+
+      button.btn.btn-link {
+        color: #996d2b; 
+      }
+
+      .card-body {
+        color: #006d56;
+        background-color: #f9fff4;    
+      }
+    </style>
   </head>
   <body>
     <!-- Google Tag Manager (noscript) -->
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NCNGTJR"
         height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
-    <h1>Hello, world!</h1>
+    <div class="container">
+      <div class="row">
+        <div id="header">
+          <h1>Preguntas frecuentes</h1>
+          <div id="logos">
+            <img src="logo_caja.png">
+            <img src="logo_unus.png">
+            <img src="logo_argos.png">
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div id="accordion">
+          <div class="card">
+            <div class="card-header" id="headingOne">
+              <h5 class="mb-0">
+                <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  ¿Si ya hice uso del seguro, me recuperé y me vuelve a dar, aplica el seguro nuevamente?
+                </button>
+              </h5>
+            </div>
+        
+            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+              <div class="card-body">
+                Una vez recuperado se tendría que volver a contratar el seguro para nuevamente hacer uso de los beneficios de éste.
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="headingTwo">
+              <h5 class="mb-0">
+                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  ¿El socio podrá contratar el seguro para su cónyuge o familiares?
+                </button>
+              </h5>
+            </div>
+            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+              <div class="card-body">
+                Tendrán que ser socios activos de la caja para contratarlo. Solamente podrán contratarlo para los hijos menores de 18 años con el mismo número de socio.
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="headingThree">
+              <h5 class="mb-0">
+                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  ¿Cuáles son los límites de edad para contratar el seguro?
+                </button>
+              </h5>
+            </div>
+            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+              <div class="card-body">
+                La edad de admisión para la cobertura es de 18 (dieciocho) años como mínimo y 75 (setenta y cinco) años como máximo.
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="headingFour">
+              <h5 class="mb-0">
+                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                  ¿Hay periodo de espera?
+                </button>
+              </h5>
+            </div>
+            <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+              <div class="card-body">
+                No. Siempre y cuando no exista un dictamen previo de COVID-19 positivo.
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="headingFive">
+              <h5 class="mb-0">
+                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                  ¿Puedo contratar la póliza si tengo un dictamen de COVID-19 positivo?
+                </button>
+              </h5>
+            </div>
+            <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
+              <div class="card-body">
+                No se puede contratar.
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="headingSix">
+              <h5 class="mb-0">
+                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                  ¿Qué es el tratamiento hospitalario por diagnóstico de COVID-19 y cuánto tiempo me cubre?
+                </button>
+              </h5>
+            </div>
+            <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordion">
+              <div class="card-body">
+                Se entenderá que ocurre un tratamiento médico hospitalario cuando el Asegurado Titular se encuentre registrado como paciente de un hospital público o privado, clínica o ubicación habilitada por las autoridades sanitarias para estos efectos, por prescripción médica, utilizando al menos, 48 horas de servicio de habitación o camilla, alimentación y atención general de enfermería en dicho establecimiento.
 
-    <div class="row">
-      <div id="accordion">
-        <div class="card">
-          <div class="card-header" id="headingOne">
-            <h5 class="mb-0">
-              <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                Collapsible Group Item #1
-              </button>
-            </h5>
-          </div>
-      
-          <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
-            <div class="card-body">
-              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                La compañía pagará la Suma Asegurada de esta cobertura,  $50,000.00 (cincuenta mil pesos 00/100 M.N.) por única vez por un periodo mínimo de 48 horas continuas por hospitalización de COVID-19.
+              </div>
             </div>
           </div>
-        </div>
-        <div class="card">
-          <div class="card-header" id="headingTwo">
-            <h5 class="mb-0">
-              <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                Collapsible Group Item #2
-              </button>
-            </h5>
-          </div>
-          <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
-            <div class="card-body">
-              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+          <div class="card">
+            <div class="card-header" id="headingEight">
+              <h5 class="mb-0">
+                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                  ¿Se necesita certificación médica del diagnóstico de COVID-19 para obtener los beneficios?
+                </button>
+              </h5>
             </div>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-header" id="headingThree">
-            <h5 class="mb-0">
-              <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                Collapsible Group Item #3
-              </button>
-            </h5>
-          </div>
-          <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
-            <div class="card-body">
-              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+            <div id="collapseEight" class="collapse" aria-labelledby="headingEight" data-parent="#accordion">
+              <div class="card-body">
+                Sí. Se entenderá como certificación médica del diagnóstico del COVID-19 (confirmado mediante el resultado positivo a SARSCoV-2 por prueba molecular de detección de material genético viral RT-PCR) solicitado por un médico autorizado para el ejercicio de su profesión y emitido por un laboratorio avalado por una Institución de Sanidad autorizada para elaborar el diagnóstico del contagio en la República Mexicana a través del Instituto de Diagnóstico y Referencia Epidemiológicos “Dr. Manuel Martínez Báez” (INDRE).
+              </div>
             </div>
           </div>
         </div>
