@@ -24,9 +24,10 @@
         background: #f9fff4 url(BG_q.png) no-repeat center top;
       }
 
-      #header {
-        display: inherit;
+      .header {
         padding: 40px 0;
+        width: 90%;
+        margin: 0 auto;
       }
 
       h1,
@@ -40,6 +41,18 @@
         font-weight: 900;
         font-size: 40px;
         color: #006d56;
+      }
+
+      .logo {
+        margin: 0 30px;
+      }
+
+      .logo:first-child {
+        margin: 0 30px 0 0;
+      }
+
+      .logo:last-child {
+        margin: 0 0 0 30px;
       }
 
       button.btn.btn-link,
@@ -73,17 +86,17 @@
         height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
     <div class="container">
-      <div class="row">
-        <div id="header">
-          <h1>Preguntas frecuentes</h1>
-          <div id="logos">
-            <img src="logo_caja.png">
-            <img src="logo_unus.png">
-            <img src="logo_argos.png">
+      <div class="row justify-content-center header">
+          <div class="col-md">
+            <h1>Preguntas frecuentes</h1>
           </div>
-        </div>
+          <div class="col-md">
+            <img class="logo" src="logo_caja.png">
+            <img class="logo" src="logo_unus.png">
+            <img class="logo" src="logo_argos.png">
+          </div>
       </div>
-      <div class="row">
+      <div class="row justify-content-center">
         <div id="accordion">
           <div class="card">
             <div class="card-header" id="headingOne">
