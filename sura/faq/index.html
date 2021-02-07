@@ -2,26 +2,26 @@
 <html>
 <head>
 		<!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-	new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-	j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-	'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-	})(window,document,'script','dataLayer','GTM-NCNGTJR');</script>
-	<!-- End Google Tag Manager -->
-	<meta name="robots" content="noindex, nofollow">
+		<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+			new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+			j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+			'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+			})(window,document,'script','dataLayer','GTM-NCNGTJR');</script>
+			<!-- End Google Tag Manager -->
+			<meta name="robots" content="noindex, nofollow">
 <meta charset="utf-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>SURA </title>
+<title>FAQ SURA</title>
 <style id="applicationStylesheet" type="text/css">
 :root {
-	--web-view-ids: movil,medium,desktop;
+	--web-view-ids: desktop,movil_retina,medium;
 	--web-view-name: desktop;
 	--web-view-id: desktop;
 	--web-scale-to-fit: false;
 	--web-scale-to-fit-type: default;
 	--web-enable-scale-up: false;
-	--web-scale-on-resize: true;
+	--web-scale-on-resize: false;
 	--web-show-scale-controls: false;
 	--web-scale-on-double-click: false;
 	--web-center-horizontally: true;
@@ -36,15 +36,75 @@
 	--web-enable-deep-linking: true;
 	--web-is-overlay: false;
 }
-#movil,
-#medium,
-#desktop {
+#desktop,
+#movil_retina,
+#medium {
 	display: none;
+}
+@media (min-width: 1600px) {
+	.mediaViewInfo {
+		--web-view-name: desktop;
+		--web-view-id: desktop;
+		--web-center-horizontally: true;
+		--web-show-by-media-query: true;
+		--web-enable-deep-linking: true;
+	}
+	* {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+		border: none;
+	}
+	#desktop {
+		position: absolute;
+		display: block;
+		width: 1600px;
+		height: 2000px;
+		background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(230,230,230,1) 100%);
+		overflow: hidden;
+		--web-view-name: desktop;
+		--web-view-id: desktop;
+		--web-center-horizontally: true;
+		--web-show-by-media-query: true;
+		--web-enable-deep-linking: true;
+	}
+	#c01 {
+		position: absolute;
+		width: 1351px;
+		height: 1084px;
+		left: 136px;
+		top: 224px;
+		overflow: visible;
+	}
+	#logo_sura {
+		position: absolute;
+		width: 249px;
+		height: 45px;
+		left: 1064px;
+		top: 94px;
+		overflow: visible;
+	}
+	#logo_unus {
+		position: absolute;
+		width: 151px;
+		height: 77px;
+		left: 880px;
+		top: 69px;
+		overflow: visible;
+	}
+	#Preguntas_Frecuentes {
+		position: absolute;
+		width: 493px;
+		height: 59px;
+		left: 313px;
+		top: 93px;
+		overflow: visible;
+	}
 }
 @media (min-width: 0px) and (max-width: 1111px) {
 	.mediaViewInfo {
-		--web-view-name: movil;
-		--web-view-id: movil;
+		--web-view-name: movil_retina;
+		--web-view-id: movil_retina;
 		--web-scale-to-fit: true;
 		--web-scale-to-fit-type: width;
 		--web-enable-scale-up: true;
@@ -59,15 +119,15 @@
 		box-sizing: border-box;
 		border: none;
 	}
-	#movil {
+	#movil_retina {
 		position: absolute;
 		display: block;
 		width: 781px;
-		height: 2858px;
-		background: url('./bg_sura.png') repeat;
+		height: 3560px;
+		background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(230,230,230,1) 100%);
 		overflow: hidden;
-		--web-view-name: movil;
-		--web-view-id: movil;
+		--web-view-name: movil_retina;
+		--web-view-id: movil_retina;
 		--web-scale-to-fit: true;
 		--web-scale-to-fit-type: width;
 		--web-enable-scale-up: true;
@@ -76,119 +136,7 @@
 		--web-show-by-media-query: true;
 		--web-enable-deep-linking: true;
 	}
-	#bg {
-		position: absolute;
-		width: 781px;
-		height: 2858px;
-		left: 0px;
-		top: 0px;
-		overflow: visible;
-	}
-	#mail {
-		position: absolute;
-		width: 649px;
-		height: 34px;
-		left: 66px;
-		top: 2683px;
-		overflow: visible;
-	}
-	#tels {
-		position: absolute;
-		width: 651px;
-		height: 140px;
-		left: 67px;
-		top: 2511px;
-		overflow: visible;
-	}
-	#btn_fbmsg {
-		position: absolute;
-		width: 236px;
-		height: 236px;
-		left: 475px;
-		top: 2173px;
-		overflow: visible;
-	}
-	#btn_faq {
-		position: absolute;
-		width: 381px;
-		height: 298px;
-		left: 68px;
-		top: 2173px;
-		overflow: visible;
-	}
-	#txt_dudas {
-		position: absolute;
-		width: 367px;
-		height: 62px;
-		left: 207px;
-		top: 2046px;
-		overflow: visible;
-	}
-	#bloque_txt02 {
-		position: absolute;
-		width: 653px;
-		height: 313px;
-		left: 64px;
-		top: 1694px;
-		overflow: visible;
-	}
-	#btn_cotiza {
-		position: absolute;
-		width: 671px;
-		height: 280px;
-		left: 57px;
-		top: 1418px;
-		overflow: visible;
-	}
-	#btn_descarga {
-		position: absolute;
-		width: 650px;
-		height: 64px;
-		left: 66px;
-		top: 1351px;
-		overflow: visible;
-	}
-	#bloque_txt01 {
-		position: absolute;
-		width: 650px;
-		height: 293px;
-		left: 66px;
-		top: 1050px;
-		overflow: visible;
-	}
-	#costo {
-		position: absolute;
-		width: 649px;
-		height: 352px;
-		left: 66px;
-		top: 689px;
-		overflow: visible;
-	}
-	#pleca_01 {
-		position: absolute;
-		width: 652px;
-		height: 38px;
-		left: 65px;
-		top: 642px;
-		overflow: visible;
-	}
-	#bloque_01 {
-		position: absolute;
-		width: 649px;
-		height: 157px;
-		left: 66px;
-		top: 476px;
-		overflow: visible;
-	}
-	#header {
-		position: absolute;
-		width: 643px;
-		height: 189px;
-		left: 69px;
-		top: 242px;
-		overflow: visible;
-	}
-	#logo_unus {
+	#logo_unus_q {
 		position: absolute;
 		width: 204px;
 		height: 104px;
@@ -196,12 +144,36 @@
 		top: 84px;
 		overflow: visible;
 	}
-	#logo_sura {
+	#faq_txt {
+		position: absolute;
+		width: 641px;
+		height: 76px;
+		left: 71px;
+		top: 237px;
+		overflow: visible;
+	}
+	#logo_sura_s {
 		position: absolute;
 		width: 340px;
 		height: 60px;
 		left: 375px;
 		top: 114px;
+		overflow: visible;
+	}
+	#mail {
+		position: absolute;
+		width: 649px;
+		height: 34px;
+		left: 66px;
+		top: 3433px;
+		overflow: visible;
+	}
+	#tels {
+		position: absolute;
+		width: 651px;
+		height: 140px;
+		left: 67px;
+		top: 3261px;
 		overflow: visible;
 	}
 }
@@ -223,8 +195,8 @@
 		position: absolute;
 		display: block;
 		width: 1112px;
-		height: 1241px;
-		background-color: rgba(255,255,255,1);
+		height: 1205px;
+		background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(230,230,230,1) 100%);
 		overflow: hidden;
 		--web-view-name: medium;
 		--web-view-id: medium;
@@ -234,306 +206,42 @@
 	}
 	#Group_1 {
 		position: absolute;
-		width: 1112px;
-		height: 1241px;
-		left: 0px;
-		top: 0px;
-		overflow: visible;
-		background: url('./bg_sura.png') repeat;
-	}
-	#BG {
-		position: absolute;
-		width: 1112px;
-		height: 1241px;
-		left: 0px;
-		top: 0px;
-		overflow: visible;
-	}
-	#c01 {
-		position: absolute;
 		width: 1099px;
-		height: 883px;
-		left: 3px;
-		top: 182px;
-		overflow: visible;
-	}
-	#mail_ {
-		position: absolute;
-		width: 306px;
-		height: 17px;
-		left: 651px;
-		top: 1110px;
-		overflow: visible;
-	}
-	#llamanos_txt {
-		position: absolute;
-		width: 289px;
-		height: 73px;
-		left: 659px;
-		top: 1026px;
-		overflow: visible;
-	}
-	#faq {
-		position: absolute;
-		width: 289px;
-		height: 226px;
-		left: 663px;
-		top: 800px;
-		overflow: visible;
-	}
-	#dudas {
-		position: absolute;
-		width: 185px;
-		height: 29px;
-		left: 712px;
-		top: 764px;
-		overflow: visible;
-	}
-	#btn-cot {
-		position: absolute;
-		width: 326px;
-		height: 136px;
-		left: 641px;
-		top: 611px;
-		overflow: visible;
-	}
-	#costo_ {
-		position: absolute;
-		width: 319px;
-		height: 173px;
-		left: 645px;
-		top: 425px;
-		overflow: visible;
-	}
-	#bloque_txt03 {
-		position: absolute;
-		width: 487px;
-		height: 234px;
-		left: 150px;
-		top: 900px;
-		overflow: visible;
-	}
-	#pleca_descarga {
-		position: absolute;
-		width: 487px;
-		height: 53px;
-		left: 150px;
-		top: 838px;
-		overflow: visible;
-	}
-	#bloque_tx02 {
-		position: absolute;
-		width: 484px;
-		height: 218px;
-		left: 150px;
-		top: 613px;
-		overflow: visible;
-	}
-	#pleca_cuestionario {
-		position: absolute;
-		width: 486px;
-		height: 31px;
-		left: 151px;
-		top: 574px;
-		overflow: visible;
-	}
-	#bloque_txt01_bd {
-		position: absolute;
-		width: 486px;
-		height: 145px;
-		left: 151px;
-		top: 424px;
-		overflow: visible;
-	}
-	#Header {
-		position: absolute;
-		width: 808px;
-		height: 207px;
-		left: 152px;
-		top: 195px;
-		overflow: visible;
-	}
-	#logo_sura_bf {
-		position: absolute;
-		width: 277px;
-		height: 50px;
-		left: 687px;
-		top: 92px;
-		overflow: visible;
-	}
-	#logo_unus_bg {
-		position: absolute;
-		width: 167px;
-		height: 86px;
-		left: 150px;
+		height: 1009px;
+		left: 6px;
 		top: 56px;
 		overflow: visible;
 	}
-}
-@media (min-width: 1600px) {
-	.mediaViewInfo {
-		--web-view-name: desktop;
-		--web-view-id: desktop;
-		--web-scale-on-resize: true;
-		--web-center-horizontally: true;
-		--web-show-by-media-query: true;
-		--web-enable-deep-linking: true;
-	}
-	* {
-		margin: 0;
-		padding: 0;
-		box-sizing: border-box;
-		border: none;
-	}
-	#desktop {
+	#c01_z {
 		position: absolute;
-		display: block;
-		width: 1600px;
-		height: 1525px;
-		background-color: rgba(255,255,255,1);
-		overflow: hidden;
-		--web-view-name: desktop;
-		--web-view-id: desktop;
-		--web-scale-on-resize: true;
-		--web-center-horizontally: true;
-		--web-show-by-media-query: true;
-		--web-enable-deep-linking: true;
-	}
-	#Group_1_bj {
-		position: absolute;
-		width: 1600px;
-		height: 1525px;
+		width: 1099px;
+		height: 883px;
 		left: 0px;
-		top: 0px;
-		overflow: visible;
-		background: url('./bg_sura.png') repeat;
-	}
-	#BG_bk {
-		position: absolute;
-		width: 1600px;
-		height: 1525px;
-		left: 0px;
-		top: 0px;
+		top: 126px;
 		overflow: visible;
 	}
-	#c01_bl {
+	#logo_sura_ {
 		position: absolute;
-		width: 1351px;
-		height: 1084px;
-		left: 124px;
-		top: 224px;
-		overflow: visible;
-	}
-	#mail_bm {
-		position: absolute;
-		width: 375px;
-		height: 20px;
-		left: 917px;
-		top: 1364px;
-		overflow: visible;
-	}
-	#llamanos_txt_bn {
-		position: absolute;
-		width: 355px;
-		height: 90px;
-		left: 927px;
-		top: 1260px;
-		overflow: visible;
-	}
-	#faq_bo {
-		position: absolute;
-		width: 354px;
-		height: 277px;
-		left: 932px;
-		top: 983px;
-		overflow: visible;
-	}
-	#dudas_bp {
-		position: absolute;
-		width: 227px;
+		width: 203px;
 		height: 36px;
-		left: 992px;
-		top: 938px;
+		left: 755px;
+		top: 21px;
 		overflow: visible;
 	}
-	#btn-cot_bq {
+	#logo_unus_ {
+		position: absolute;
+		width: 123px;
+		height: 63px;
+		left: 605px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Preguntas_Frecuentes_ {
 		position: absolute;
 		width: 401px;
-		height: 167px;
-		left: 904px;
-		top: 751px;
-		overflow: visible;
-	}
-	#costo_br {
-		position: absolute;
-		width: 392px;
-		height: 212px;
-		left: 909px;
-		top: 522px;
-		overflow: visible;
-	}
-	#bloque_txt03_bs {
-		position: absolute;
-		width: 598px;
-		height: 287px;
-		left: 301px;
-		top: 1106px;
-		overflow: visible;
-	}
-	#pleca_descarga_bt {
-		position: absolute;
-		width: 598px;
-		height: 64px;
-		left: 301px;
-		top: 1030px;
-		overflow: visible;
-	}
-	#bloque_tx02_bu {
-		position: absolute;
-		width: 595px;
-		height: 268px;
-		left: 301px;
-		top: 753px;
-		overflow: visible;
-	}
-	#pleca_cuestionario_bv {
-		position: absolute;
-		width: 596px;
-		height: 38px;
-		left: 303px;
-		top: 705px;
-		overflow: visible;
-	}
-	#bloque_txt01_bw {
-		position: absolute;
-		width: 597px;
-		height: 178px;
-		left: 302px;
-		top: 521px;
-		overflow: visible;
-	}
-	#Header_bx {
-		position: absolute;
-		width: 992px;
-		height: 255px;
-		left: 304px;
-		top: 239px;
-		overflow: visible;
-	}
-	#logo_sura_by {
-		position: absolute;
-		width: 340px;
-		height: 61px;
-		left: 961px;
-		top: 113px;
-		overflow: visible;
-	}
-	#logo_unus_bz {
-		position: absolute;
-		width: 205px;
-		height: 105px;
-		left: 301px;
-		top: 69px;
+		height: 48px;
+		left: 144px;
+		top: 20px;
 		overflow: visible;
 	}
 }
@@ -3383,105 +3091,37 @@ window.application = new Application();
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NCNGTJR"
 	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
-<div id="movil">
+<div id="desktop">
+	<img id="c01" src="c01.png" srcset="c01.png 1x, c01@2x.png 2x">
+		
+	<img id="logo_sura" src="logo_sura.png" srcset="logo_sura.png 1x, logo_sura@2x.png 2x">
+		
+	<img id="logo_unus" src="logo_unus.png" srcset="logo_unus.png 1x, logo_unus@2x.png 2x">
+		
+	<img id="Preguntas_Frecuentes" src="Preguntas_Frecuentes.png" srcset="Preguntas_Frecuentes.png 1x, Preguntas_Frecuentes@2x.png 2x">
+		
+</div>
+<div id="movil_retina">
+	<img id="logo_unus_q" src="logo_unus_q.png" srcset="logo_unus_q.png 1x, logo_unus_q@2x.png 2x">
+		
+	<img id="faq_txt" src="faq_txt.png" srcset="faq_txt.png 1x, faq_txt@2x.png 2x">
+		
+	<img id="logo_sura_s" src="logo_sura_s.png" srcset="logo_sura_s.png 1x, logo_sura_s@2x.png 2x">
+		
 	<img id="mail" src="mail.png" srcset="mail.png 1x, mail@2x.png 2x">
 		
 	<img id="tels" src="tels.png" srcset="tels.png 1x, tels@2x.png 2x">
 		
-	<img id="btn_fbmsg" src="btn_fbmsg.png" srcset="btn_fbmsg.png 1x, btn_fbmsg@2x.png 2x">
-		
-	<img id="btn_faq" src="btn_faq.png" srcset="btn_faq.png 1x, btn_faq@2x.png 2x">
-		
-	<img id="txt_dudas" src="txt_dudas.png" srcset="txt_dudas.png 1x, txt_dudas@2x.png 2x">
-		
-	<img id="bloque_txt02" src="bloque_txt02.png" srcset="bloque_txt02.png 1x, bloque_txt02@2x.png 2x">
-		
-	<img id="btn_cotiza" src="btn_cotiza.png" srcset="btn_cotiza.png 1x, btn_cotiza@2x.png 2x">
-		
-	<a href="./media/usuario_ala_azul.pdf" download><img id="btn_descarga" src="btn_descarga.png" srcset="btn_descarga.png 1x, btn_descarga@2x.png 2x"></a>
-		
-	<img id="bloque_txt01" src="bloque_txt01.png" srcset="bloque_txt01.png 1x, bloque_txt01@2x.png 2x">
-		
-	<img id="costo" src="costo.png" srcset="costo.png 1x, costo@2x.png 2x">
-		
-	<img id="pleca_01" src="pleca_01.png" srcset="pleca_01.png 1x, pleca_01@2x.png 2x">
-		
-	<img id="bloque_01" src="bloque_01.png" srcset="bloque_01.png 1x, bloque_01@2x.png 2x">
-		
-	<img id="header" src="header.png" srcset="header.png 1x, header@2x.png 2x">
-		
-	<img id="logo_unus" src="logo_unus.png" srcset="logo_unus.png 1x, logo_unus@2x.png 2x">
-		
-	<img id="logo_sura" src="logo_sura.png" srcset="logo_sura.png 1x, logo_sura@2x.png 2x">
-		
 </div>
 <div id="medium">
 	<div id="Group_1">
+		<img id="c01_z" src="c01_z.png" srcset="c01_z.png 1x, c01_z@2x.png 2x">
 			
-		<img id="c01" src="c01.png" srcset="c01.png 1x, c01@2x.png 2x">
+		<img id="logo_sura_" src="logo_sura_.png" srcset="logo_sura_.png 1x, logo_sura_@2x.png 2x">
 			
-		<img id="mail_" src="mail_.png" srcset="mail_.png 1x, mail_@2x.png 2x">
+		<img id="logo_unus_" src="logo_unus_.png" srcset="logo_unus_.png 1x, logo_unus_@2x.png 2x">
 			
-		<img id="llamanos_txt" src="llamanos_txt.png" srcset="llamanos_txt.png 1x, llamanos_txt@2x.png 2x">
-			
-		<img id="faq" src="faq.png" srcset="faq.png 1x, faq@2x.png 2x">
-			
-		<img id="dudas" src="dudas.png" srcset="dudas.png 1x, dudas@2x.png 2x">
-			
-		<img id="btn-cot" src="btn-cot.png" srcset="btn-cot.png 1x, btn-cot@2x.png 2x">
-			
-		<img id="costo_" src="costo_.png" srcset="costo_.png 1x, costo_@2x.png 2x">
-			
-		<img id="bloque_txt03" src="bloque_txt03.png" srcset="bloque_txt03.png 1x, bloque_txt03@2x.png 2x">
-			
-		<a href="./media/usuario_ala_azul.pdf" download><img id="pleca_descarga" src="pleca_descarga.png" srcset="pleca_descarga.png 1x, pleca_descarga@2x.png 2x"></a>
-			
-		<img id="bloque_tx02" src="bloque_tx02.png" srcset="bloque_tx02.png 1x, bloque_tx02@2x.png 2x">
-			
-		<img id="pleca_cuestionario" src="pleca_cuestionario.png" srcset="pleca_cuestionario.png 1x, pleca_cuestionario@2x.png 2x">
-			
-		<img id="bloque_txt01_bd" src="bloque_txt01_bd.png" srcset="bloque_txt01_bd.png 1x, bloque_txt01_bd@2x.png 2x">
-			
-		<img id="Header" src="header.png" srcset="header.png 1x, header@2x.png 2x">
-			
-		<img id="logo_sura_bf" src="logo_sura_bf.png" srcset="logo_sura_bf.png 1x, logo_sura_bf@2x.png 2x">
-			
-		<img id="logo_unus_bg" src="logo_unus_bg.png" srcset="logo_unus_bg.png 1x, logo_unus_bg@2x.png 2x">
-			
-	</div>
-</div>
-<div id="desktop">
-	<div id="Group_1_bj">
-			
-		<img id="c01_bl" src="c01_bl.png" srcset="c01_bl.png 1x, c01_bl@2x.png 2x">
-			
-		<img id="mail_bm" src="mail_bm.png" srcset="mail_bm.png 1x, mail_bm@2x.png 2x">
-			
-		<img id="llamanos_txt_bn" src="llamanos_txt_bn.png" srcset="llamanos_txt_bn.png 1x, llamanos_txt_bn@2x.png 2x">
-			
-		<img id="faq_bo" src="faq_bo.png" srcset="faq_bo.png 1x, faq_bo@2x.png 2x">
-			
-		<img id="dudas_bp" src="dudas_bp.png" srcset="dudas_bp.png 1x, dudas_bp@2x.png 2x">
-			
-		<img id="btn-cot_bq" src="btn-cot_bq.png" srcset="btn-cot_bq.png 1x, btn-cot_bq@2x.png 2x">
-			
-		<img id="costo_br" src="costo_br.png" srcset="costo_br.png 1x, costo_br@2x.png 2x">
-			
-		<img id="bloque_txt03_bs" src="bloque_txt03_bs.png" srcset="bloque_txt03_bs.png 1x, bloque_txt03_bs@2x.png 2x">
-			
-		<a href="./media/usuario_ala_azul.pdf" download><img id="pleca_descarga_bt" src="pleca_descarga_bt.png" srcset="pleca_descarga_bt.png 1x, pleca_descarga_bt@2x.png 2x"></a>
-			
-		<img id="bloque_tx02_bu" src="bloque_tx02_bu.png" srcset="bloque_tx02_bu.png 1x, bloque_tx02_bu@2x.png 2x">
-			
-		<img id="pleca_cuestionario_bv" src="pleca_cuestionario_bv.png" srcset="pleca_cuestionario_bv.png 1x, pleca_cuestionario_bv@2x.png 2x">
-			
-		<img id="bloque_txt01_bw" src="bloque_txt01_bw.png" srcset="bloque_txt01_bw.png 1x, bloque_txt01_bw@2x.png 2x">
-			
-		<img id="Header_bx" src="Header_bx.png" srcset="Header_bx.png 1x, Header_bx@2x.png 2x">
-			
-		<img id="logo_sura_by" src="logo_sura_by.png" srcset="logo_sura_by.png 1x, logo_sura_by@2x.png 2x">
-			
-		<img id="logo_unus_bz" src="logo_unus_bz.png" srcset="logo_unus_bz.png 1x, logo_unus_bz@2x.png 2x">
+		<img id="Preguntas_Frecuentes_" src="Preguntas_Frecuentes_.png" srcset="Preguntas_Frecuentes_.png 1x, Preguntas_Frecuentes_@2x.png 2x">
 			
 	</div>
 </div>
